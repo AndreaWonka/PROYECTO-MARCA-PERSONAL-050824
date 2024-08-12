@@ -1,0 +1,82 @@
+/* Estilo general del cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/img/lanocheestrellada.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: "Pompiere", sans-serif;
+    
+}
+
+/* Responsivo para el cuadro de texto */
+.overlay {
+    background-color: rgba(2, 83, 179, 0.9); /* Azul con transparencia */
+    color: aliceblue;
+    padding: 20px;
+    margin: 100px; /* Espacio alrededor del overlay */
+    border-radius: 10px; /* Para bordes redondeados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra para mejor contraste */
+    width: calc(100% - 40px); /* Ancho casi completo, dejando margen */
+    max-width: 100%; /* Asegura que el overlay no sea más ancho que la pantalla */
+    height: calc(100vh - 40px); /* Altura casi completa, dejando margen */
+    overflow-y: auto; /* Permite desplazamiento vertical si el contenido es largo */
+    font-family: "Pompiere", sans-serif;
+    font-size: 2rem; /* Ajusta según sea necesario */
+    
+}
+
+.pompiere-regular-overlay p, 
+.pompiere-regular-overlay .thanks-list {  
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    color: #FFFAF2;
+    text-align: left;
+    line-height: 1.6;
+}
+
+
+
+
+  .signature {
+    font-size: 2rem; /* Ajusta según sea necesario */
+    color: #FFFAF2;
+    text-align: right;
+    line-height: 1.6;
+    font-family: 'Great Vibes';
+    
+}
+
+
+  
+
+/* Estilo para el título dentro del overlay */
+.overlay h1 {
+    font-size: 2.5rem; /* Ajusta según sea necesario */
+    color: #fff539;
+    text-align: left;
+    font-family: 'Great Vibes';
+}
+
+
+
+/* Estilos responsivos adicionales */
+@media (max-width: 600px) {
+    .overlay {
+        margin: 10px;
+        padding: 15px;
+        width: calc(100% - 20px);
+        height: calc(100vh - 20px);
+    }
+
+    .overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .overlay p, .thanks-list, .signature {
+        font-size: 1rem;
+    }
+}
